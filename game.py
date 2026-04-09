@@ -90,9 +90,13 @@ class Game:
 
     # ── loop ───────────────────────────────────────────────────────────────
 
+    def step(self) -> None:
+        """Advance one frame. Called by the async loop in main.py."""
+        self._handle_events()
+        self._update()
+        self._draw()
+        self.clock.tick(FPS)
+
     def run(self) -> None:
         while True:
-            self._handle_events()
-            self._update()
-            self._draw()
-            self.clock.tick(FPS)
+            self.step()
