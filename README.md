@@ -1,5 +1,7 @@
 # Infinitum
 
+**[Play in browser](https://residentevil97.itch.io/infinitum)**
+
 An endless-runner built with **pygame** where a circular world rotates toward you.
 
 ## Gameplay
