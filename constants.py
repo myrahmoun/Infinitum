@@ -41,10 +41,10 @@ SHADOW_FADE_OUT = 0.22
 
 # ─── Difficulty ramp ──────────────────────────────────────────────────────────
 
-INIT_SPEED     = 0.020    # radians per frame
-SPEED_DELTA    = 0.000014
-BASE_SPAWN_INT = 145      # base frames between spawns at score 0
-MIN_SPAWN_INT  = 55
-SPAWN_TIGHTEN  = 0.12     # frames subtracted per point scored
-SPAWN_RAND_PCT = 0.55     # random extra delay as fraction of spawn_int (0 → 55% more)
-MIN_GAP_ANGLE  = 1.15     # min angular gap (radians) between consecutive obstacles
+INIT_SPEED     = 0.022    # radians per frame
+SPEED_DELTA    = 0.000020 # faster speed ramp per point scored
+BASE_SPAWN_INT = 90       # base frames between spawns at score 0  (~1.5 s)
+MIN_SPAWN_INT  = 38       # floor: ~0.6 s, reached around score 115
+SPAWN_TIGHTEN  = 0.45     # frames subtracted per point scored (was 0.12)
+SPAWN_RAND_PCT = 0.30     # random extra delay: up to 30% of spawn_int
+MIN_GAP_ANGLE  = 1.05     # min angular gap (radians) between consecutive obstacles
