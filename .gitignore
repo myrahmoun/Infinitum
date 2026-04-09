@@ -1,5 +1,6 @@
 # Virtual Environment
-/env
+/.env
+/build
 
 # Me learning pygame
 example1.py
